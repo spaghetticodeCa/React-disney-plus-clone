@@ -18,6 +18,18 @@ function Movies() {
         <Wrap>
           <img src="https://whatsondisneyplus.com/wp-content/uploads/2019/10/EG1tpkVVUAEU30q.jpg" />
         </Wrap>
+        <Wrap>
+          <img src="https://whatsondisneyplus.com/wp-content/uploads/2019/10/EG1tpkVVUAEU30q.jpg" />
+        </Wrap>
+        <Wrap>
+          <img src="https://whatsondisneyplus.com/wp-content/uploads/2019/10/EG1tpkVVUAEU30q.jpg" />
+        </Wrap>
+        <Wrap>
+          <img src="https://whatsondisneyplus.com/wp-content/uploads/2019/10/EG1tpkVVUAEU30q.jpg" />
+        </Wrap>
+        <Wrap>
+          <img src="https://whatsondisneyplus.com/wp-content/uploads/2019/10/EG1tpkVVUAEU30q.jpg" />
+        </Wrap>
       </Content>
     </Container>
   );

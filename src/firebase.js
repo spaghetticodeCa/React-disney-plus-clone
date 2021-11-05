@@ -1,20 +1,18 @@
-import firebase from "firebase";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA9BnlX96fMf7XiUVCFRsoQzG8DGERJkeY",
-  authDomain: "disneyplus-clone-a33d5.firebaseapp.com",
-  projectId: "disneyplus-clone-a33d5",
-  storageBucket: "disneyplus-clone-a33d5.appspot.com",
-  messagingSenderId: "37918794208",
-  appId: "1:37918794208:web:dbe9842dfe1dda522a4b85",
-  measurementId: "G-DRVLJKWRWG",
+  apiKey: "AIzaSyAQYE7DHM7dxValUuuwGQWuOjyE4NGkcuY",
+  authDomain: "disney-clone-649cb.firebaseapp.com",
+  projectId: "disney-clone-649cb",
+  storageBucket: "disney-clone-649cb.appspot.com",
+  messagingSenderId: "17941192252",
+  appId: "1:17941192252:web:d7a2f49b42e3852b63ed39",
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
-const provider = new firebase.auth.GoogleAuthProvider();
-const storage = firebase.storage();
+// Initialize Firebase
+const firebaseApp = initializeApp(firebaseConfig);
 
-export { auth, provider, storage };
-export default db;
+export const db = getFirestore(firebaseApp);

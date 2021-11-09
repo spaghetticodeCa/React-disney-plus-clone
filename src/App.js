@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Detail from "./components/Detail";
 import Login from "./components/Login";
 import "./App.css";
-import { db } from "./firebase.js";
-import {
-  collection,
-  getDocs,
-  addDoc,
-  updateDoc,
-  doc,
-  deleteDoc,
-} from "firebase/firestore";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { db } from "./firebase.js";
+// import {
+//   collection,
+//   getDocs,
+//   addDoc,
+//   updateDoc,
+//   doc,
+//   deleteDoc,
+// } from "firebase/firestore";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   // const usersCollectionRef = collection(db, "users");
@@ -102,7 +102,7 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/detail">
+          <Route path="/detail/:id">
             <Detail />
           </Route>
           <Route path="/">
